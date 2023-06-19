@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".ResultFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:textSize="100px"
+        android:gravity="center"
+        android:id="@+id/ShowGameScore"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="800px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/Result_List"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Next Game"
+    android:id="@+id/btn_nextgame"
+    />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/btn_history"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/btn_home"
+        />
+</LinearLayout>

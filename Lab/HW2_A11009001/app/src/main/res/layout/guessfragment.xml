@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".GuessFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:id="@+id/txt_score"
+        android:text="Score:0"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:id="@+id/txt_stage"
+        android:text="Stage:1/4"/>
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:id="@+id/txt_attempts"
+        android:text="Attempts:0"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+<androidx.recyclerview.widget.RecyclerView
+android:layout_marginTop="50px"
+    android:layout_width="500px"
+    android:layout_height="400px"
+    android:orientation="vertical"
+    android:id="@+id/Recordlist_item"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    />
+
+        <EditText
+            android:id="@+id/edit_guessnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="4"
+android:hint="GuessNumber"
+             />
+
+        <Button
+            android:id="@+id/btn_guess"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guess" />
+    </LinearLayout>
+
+</LinearLayout>
